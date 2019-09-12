@@ -1,0 +1,271 @@
+section {
+    background-image: url(fon9.jpg);
+    background-repeat: no-repeat; 
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: 100%
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 236, 8, 0.3);
+    z-index: 100;
+}
+
+ header ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+ #head {
+    left: 0;
+    text-align: left ;
+    font-style: oblique;
+    font-size: 120%;
+    color: #46be06;
+}
+
+ header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color .25s, padding .25s;
+}
+
+header ul li a:hover,
+header ul li.active a {
+    color: #ff2700;
+    text-decoration: none;
+}
+
+.dl-content {
+/*    min-height: 500px; Определяли размер блока*/
+/*    border: 1px solid black;*/
+    padding: 40px 0;
+}
+
+.dl-content h2 {
+    text-align: center;
+    color:  black;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #93b40a;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/*Уменьшение зафиксированного окна ,когда скроллим*/
+header.top ul li a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*Слайдшоу*/
+#main .dl-content {
+    padding: 0
+}
+#slider{ 
+    margin-top: 0;
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.owl-dots button.owl-dot {
+    display: inline-block;
+    padding: 0 10px !important;
+    opacity: 0.75;
+
+}
+
+.owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.owl-dots button.owl-dot span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 100%;
+    transition: background-color .25s;
+
+}
+
+.owl-dots button.owl-dot.active span {
+    background: rgba(171, 1, 222, 0.81);
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    top: 50%;
+    margin-top: -20px;
+    border-radius: 100%;
+    text-align: center;
+    opacity: 0.75;
+    transition: opacity .25s;
+
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+    opacity: 0.95;
+}
+
+.owl-carousel .owl-nav button.owl-prev:focus,
+.owl-carousel .owl-nav button.owl-next:focus {
+    opacity: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    left: 25px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    right: 25px;
+}
+
+.owl-carousel .owl-nav button.owl-prev i,
+.owl-carousel .owl-nav button.owl-next i {
+    color: aqua;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+/*Всплывающие окна*/
+
+#services .lp-tab .btn {
+    background: #03c396;
+    border-color: transparent;
+    transition: background-color .25s;
+}
+
+#services .lp-tab .btn:hover {
+    background: #5073e6;
+}
+
+#services .lp-tab .btn:focus {
+    box-shadow: none;
+}
+
+.lp-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+}
+.color-strong {
+    color: #66d911;
+    font-size: 20pt;
+    font-family:serif;
+} 
+
+/*Рамка для текста - описание породы*/
+.text{
+    border-style: double;
+    border-color: darkgreen
+}
+#description {
+    text-align: center;
+    color: aliceblue;
+    background: rgba(39, 62, 3, 0.63)
+}
+#photo{
+    width: 100%;
+}
+
+/*Прайс-лист*/
+#prices table th {
+    background: #00f5ff;
+    text-align: center;
+    /*    Убираем выделение текста*/
+    user-select: none;
+}
+
+/*в квадратных скобочках записывают атрибут.*/
+#prices table th[ng-click] {
+    cursor: pointer;
+}
+
+#prices table td i {
+    color: darkgoldenrod;
+}
+
+#prices .lp-prices-loader {
+    text-align: center
+}
+
+#prices .lp-prices-loader {
+    display: inline-block;
+    font-size: 2em;
+    color: #ccc;
+    animation: spinner 1.5s linear infinite;
+}
+/*Обратная связь*/
+#feedback{
+    background-color: #052405
+}
+/*Спиннер*/
+@keyframes spinner {
+/*
+    0% {
+        transform: rotateZ(0deg);
+        color: brown;
+    }
+    10% {
+        color: #2aa533;
+    }
+    50% {
+        color: #2a50a5;
+    }
+    90% {
+        color: #a5922a;
+    }
+    100% {
+        transform: rotateZ(360deg);
+        color: #7753ba;
+    }
+*/
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+
+}
+/*Карта*/
+#lp-map {
+    height: 400px;
+}
